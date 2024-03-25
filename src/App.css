@@ -2,37 +2,147 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading {
+  color: white; 
+  margin: 10px;
+  text-shadow: 1px 1px 2px black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subheading {
+  color: white; 
+  margin: 10px;
+  text-shadow: 1px 1px 2px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.m-auto {
+  margin: 10 !important;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.box-header {
+  justify-content: left;
+  border-radius: 10px;
+  flex-basis: 10rem;
+  gap: 10px;
+  margin: 10px;
+  border: solid;
+  border-color: darkslategray;
+  background: linear-gradient(to left, #3a6073, #3a7bd5);
+}
+
+.box-input {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  gap: 10px;
+  margin: 10px;
+  width: 20%;
+  height: fit-content;
+}
+
+.box-input div {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  gap: 10px;
+  margin: 10px;
+}
+
+.box-results-recipe {
+  display: grid;
+  background-color: snow;
+  border: solid;
+  border-color: lightgrey;
+  text-align: left;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  width: 60%;
+  height: fit-content;
   align-items: center;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.box-results-recipe img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  max-width: 50%;
+  background-color: snow;
+  border: solid;
+  border-color: lightgrey;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px;
+  width: 60%;
+  height: fit-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-results-nutrition {
+  background-color: snow;
+  border: solid;
+  border-color: lightgrey;
+  text-align: left;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  width: 20%;
+  height: fit-content;
+}
+
+.box-results-recipe h4 {
+  text-shadow: 1px 1px 2px grey;
+}
+
+.box-results span {
+  white-space: pre-line
+}
+
+.button {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 10px;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #07c;
+}
+
+.button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button:active {
+  background-color: #0064bd;
+  box-shadow: none;
 }
